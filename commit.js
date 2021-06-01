@@ -17,8 +17,8 @@ function generateCommitsForDay(date) {
 }
 
 function main() {
-    let startDate = new Date('2021-01-01');
-    const endDate = new Date('2021-01-05');
+    let startDate = new Date('2021-06-01');
+    const endDate = new Date('2021-09-05');
 
     while (startDate <= endDate) {
         generateCommitsForDay(startDate);

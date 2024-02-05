@@ -1,6 +1,6 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
-
+ 
 // Function to create a commit on a specific date
 function createCommitOnDate(date) {
     const commitDate = date.toISOString();

@@ -27,7 +27,7 @@ function getRandomDaysToSkip(includeWeekends = false) {
     return daysToSkip;
 }
 
-function main() {
+function main() { 
     let startDate = new Date('2024-01-01');
     const endDate = new Date('2024-01-31');
     let dayCounter = 0;

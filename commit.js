@@ -4,14 +4,14 @@ const fs = require('fs');
 // Function to create a commit on a specific date
 function createCommitOnDate(date) {
     const commitDate = date.toISOString();
-    execSync(git add . && GIT_COMMITTER_DATE="${commitDate}" GIT_AUTHOR_DATE="${commitDate}" git commit -m "commit on ${commitDate}", { stdio: 'ignore' });
+    execSync(`git add . && GIT_COMMITTER_DATE="${commitDate}" GIT_AUTHOR_DATE="${commitDate}" git commit -m "commit on ${commitDate}", { stdio: 'ignore' }`);
 }
 
 // Function to generate a random number of commits for a given day
 function generateCommitsForDay(date) {
     const commitsCount = Math.floor(Math.random() * (13 - 4 + 1)) + 4; // Random number between 4 and 23
     for (let i = 0; i < commitsCount; i++) {
-        fs.writeFileSync('dummy.txt', Commit number ${i} on ${date.toISOString()});
+        fs.writeFileSync('dummy.txt', `Commit number ${i} on ${date.toISOString()}`);
         createCommitOnDate(date);
     }
 }

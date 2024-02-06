@@ -28,6 +28,7 @@ function getRandomDaysToSkip(includeWeekends = false) {
     return daysToSkip;
 }
 
+
 function main() {
     let startDate = new Date('2021-01-01');
     const endDate = new Date('2021-01-29');
